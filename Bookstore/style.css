@@ -1,0 +1,85 @@
+*{
+    padding: 0;    
+    margin: 0;
+}
+
+.header{
+    padding: 10px 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #171515;
+    position: static;
+    top: 0;
+    height: 70px;
+}
+
+.title{
+    color: white;
+}
+.title p{
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.img{
+    background-image: url(./home.jpg);
+    height: 500px;
+}
+
+.books {
+    max-width: 600px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.books h1 {
+    font-size: 28px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.books input[type="text"] {
+    width: calc(100% - 22px); /* Adjust for padding and border */
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.books button {
+    padding: 10px 20px;
+    margin: 5px 0;
+    border: none;
+    border-radius: 4px;
+    background-color: #171515;
+    color: white;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.books button:hover {
+    background-color: #333;
+}
+
+#book {
+    list-style-type: none;
+    padding: 0;
+}
+
+#book li {
+    padding: 10px;
+    border: 1px solid #ddd;
+    margin: 5px 0;
+    border-radius: 4px;
+    transition: background-color 0.3s;
+}
+
+#book li.favorite {
+    font-weight: bold;
+    color: #f00505;
+}
+
