@@ -11,7 +11,7 @@ function addBook() {
         document.getElementById('new-book-title').value = "";
     }
 }
-
+              
 function searchBook() {
     const searchTerm = document.getElementById('search-bar').value.toLowerCase();
     const books = document.querySelectorAll('#book li');

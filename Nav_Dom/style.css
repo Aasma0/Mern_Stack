@@ -12,6 +12,7 @@ body {
 
 .title  h1{
     color: #fff;
+    
 }
 
 nav {
@@ -42,14 +43,14 @@ nav {
     color: wheat;
 }
 
-.menu-icon {
+.icon {
     display: none;
+    color: white;
+    cursor: pointer;
+    font-size: 30px;
+
 }
 
-.menu-icon i {
-    color: #fff;
-    font-size: 30px;
-}
 
 @media (max-width: 600px) {
     .nav-links {
@@ -66,7 +67,7 @@ nav {
     .nav-links a {
         padding: 20px 0;
     }
-    .menu-icon {
+    .icon {
         display: block;
     }
     #menuList {
@@ -90,7 +91,7 @@ nav {
 .register-form h2 {
     margin-bottom: 20px;
     text-align: center;
-}
+}   
 
 .register-form label {
     margin-bottom: 5px;
@@ -136,7 +137,7 @@ nav {
 }
 
 .content input[type="text"] {
-    width: calc(100% - 22px); /* Adjust for padding and border */
+    width: calc(100% - 22px); 
     padding: 10px;
     margin: 10px 0;
     border: 1px solid #ccc;

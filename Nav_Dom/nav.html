@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./style.css">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon/fonts/remixicon.css" rel="stylesheet"> <!-- Add this line for Remix Icons -->
     <title>Nav</title>
 </head>
 <body>
@@ -14,12 +15,11 @@
             </div>
         </div>
         <div id="menuList" class="nav-links">
-            <a href="./dom.html">DOM</a>
             <a href="#">About Us</a>
             <a href="#">Login</a>
         </div>
-        <div class="menu-icon">
-            <i class="fa-solid fa-bars" onclick="toggleMenu()"></i>
+        <div class="icon" onclick="toggleMenu()">
+            <i id="menuIcon" class="ri-menu-line"></i> 
         </div>
     </nav>
 
@@ -38,22 +38,22 @@
             <button type="submit">Submit</button>
         </form>
     </div>
-
     <script>
-        let menuList = document.getElementById("menuList")
+        let menuList = document.getElementById("menuList");
         menuList.style.maxHeight = "0px";
 
-        function toggleMenu(){
-            if(menuList.style.maxHeight == "0px")
-            {
+        function toggleMenu() {
+            let menuIcon = document.getElementById("menuIcon");
+            if(menuList.style.maxHeight == "0px") {
                 menuList.style.maxHeight = "300px";
-            }
-            else{
+                menuIcon.classList.remove("ri-menu-line");
+                menuIcon.classList.add("ri-arrow-down-double-line");
+            } else {
                 menuList.style.maxHeight = "0px";
+                menuIcon.classList.remove("ri-arrow-down-double-line");
+                menuIcon.classList.add("ri-menu-line");
             }
         }
-        
     </script>
-    <script src="https://kit.fontawesome.com/f8e1a90484.js" crossorigin="anonymous"></script>
 </body>
 </html>
