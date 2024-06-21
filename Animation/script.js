@@ -20,12 +20,13 @@ document.addEventListener("DOMContentLoaded", function() {
   const navMenu = document.querySelector(".nav-menu");
 
   navToggle.addEventListener("click", function() {
-    if (navMenu.classList.contains("active")) {
+    navMenu.classList.toggle("active");
+  });
+
+  // Close the menu when clicking outside of it
+  document.addEventListener("click", function(event) {
+    if (!navMenu.contains(event.target) && event.target !== navToggle) {
       navMenu.classList.remove("active");
-      navMenu.style.animation = "slideOut 0.3s forwards";
-    } else {
-      navMenu.classList.add("active");
-      navMenu.style.animation = "slideIn 0.3s forwards";
     }
   });
 });

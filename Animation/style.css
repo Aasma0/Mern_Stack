@@ -234,32 +234,30 @@
 }
 
 /*10. Button to toggle the navigation menu */
+.nav-container {
+  position: relative;
+}
+
 .nav-toggle {
   background-color: #3498db;
   color: white;
   padding: 10px 20px;
   border: none;
   cursor: pointer;
-  margin-bottom: 20px;
   font-size: 16px;
   border-radius: 5px;
 }
 
-/* Navigation menu styles */
 .nav-menu {
-  position: fixed;
-  top: 0;
-  left: -250px; /* Hide the menu by positioning it off the screen */
+  position: absolute;
+  top: 100%; 
+  left: 0;
   width: 200px;
-  height: 100%;
   background-color: #3498db;
-  display: flex;
+  display: none;
   flex-direction: column;
-  transition: none; /* Disable transition for the initial state */
-  animation: slideOut 0.3s forwards; /* Apply initial slide out animation */
 }
 
-/* Menu links styles */
 .nav-menu a {
   color: white;
   padding: 15px 20px;
@@ -267,28 +265,18 @@
   text-align: center;
 }
 
-/* Keyframes for sliding in */
-@keyframes slideIn {
-  from {
-    left: -250px;
-  }
-  to {
-    left: 0;
-  }
-}
-
-/* Keyframes for sliding out */
-@keyframes slideOut {
-  from {
-    left: 0;
-  }
-  to {
-    left: -250px;
-  }
-}
-
-/* Apply the active class when the menu is visible */
 .nav-menu.active {
-  animation: slideIn 0.3s forwards;
+  display: flex;
+  animation: slideDown 0.3s forwards;
 }
 
+@keyframes slideDown {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
