@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GizmoHub</title>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,typography,aspect-ratio,line-clamp,container-queries"></script>
+
+</head>
+<body>  
+    <header class="bg-black text-white p-4 flex justify-between items-center">
+        <div class="text-2xl font-bold">GizmoHub</div>
+        <nav class="hidden md:flex space-x-4">
+            <a href="#home" class="hover:text-gray-400">Home</a>
+            <a href="#product" class="hover:text-gray-400">Product</a>
+            <a href="#reviews" class="hover:text-gray-400">Reviews</a>
+            <a href="#contact" class="hover:text-gray-400">Contact</a>
+        </nav>
+        <button class="md:hidden text-2xl" id="menu-button">&#9776;</button>
+    </header>
+
+    <nav id="mobile-menu" class="hidden md:hidden bg-black text-white p-4">
+        <a href="#home" class="block py-2">Home</a>
+        <a href="#product" class="block py-2">Product</a>
+        <a href="#reviews" class="block py-2">Reviews</a>
+        <a href="#contact" class="block py-2">Contact</a>
+    </nav>
+
+    <section id="home" class="flex flex-col md:flex-row items-center justify-center h-screen bg-cover bg-center text-center md:text-left" style="background-image: url('path-to-hero-image.jpg');">
+        <div class="md:w-1/2 flex justify-center md:justify-end md:mr-8 mb-8 md:mb-0">
+            <img src="./images/product2.jpeg" alt="GizmoMax Image">
+        </div>
+        <div class="md:w-1/2 flex flex-col items-center md:items-start">
+            <h1 class="text-5xl font-bold text-black">Discover GizmoMax.</h1>
+            <a href="#product" class="mt-4 px-6 py-3 bg-blue-600 text-white rounded-full">Learn More</a>
+        </div>
+    </section>
+    
+    
+
+    <section id="product" class="py-16 px-4 text-center">
+        <h2 class="text-3xl font-bold mb-4">Introducing GizmoMax</h2>
+        <p class="mb-8">The ultimate tech gadget for your everyday needs. Sleek design, powerful features, and unmatched performance.</p>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <div class="card bg-white p-4 rounded-lg shadow-md">
+                <img src="./images/product1.jpeg" alt="GizmoMax" class="mx-auto mb-4 w-full h-64 object-cover">
+                <p class="text-xl font-bold mb-4">Rs 1,50,000/-</p>
+                <p class="text-xl font-bold mb-4">Samsung S24 Series</p>
+                <div class="flex justify-center space-x-4">
+                    <button class="px-6 py-3 bg-gray-600 text-white rounded-full">Add to Cart</button>
+                    <button class="px-6 py-3 bg-green-600 text-white rounded-full">Buy Now</button>
+                </div>
+            </div>
+            <div class="card bg-white p-4 rounded-lg shadow-md">
+                <img src="./images/product2.jpeg" alt="GizmoMax" class="mx-auto mb-4 w-full h-64 object-cover">
+                <p class="text-xl font-bold mb-4">Rs 1,07,000/-</p>
+                <p class="text-xl font-bold mb-4">Laptops</p>
+                <div class="flex justify-center space-x-4">
+                    <button class="px-6 py-3 bg-gray-600 text-white rounded-full">Add to Cart</button>
+                    <button class="px-6 py-3 bg-green-600 text-white rounded-full">Buy Now</button>
+                </div>
+            </div>
+            <div class="card bg-white p-4 rounded-lg shadow-md">
+                <img src="./images/product3.jpeg" alt="GizmoMax" class="mx-auto mb-4 w-full h-64 object-cover">
+                <p class="text-xl font-bold mb-4">Rs 1,50,000/-</p>
+                <p class="text-xl font-bold mb-4">MacBook Air M2 Silver</p>
+                <div class="flex justify-center space-x-4">
+                    <button class="px-6 py-3 bg-gray-600 text-white rounded-full">Add to Cart</button>
+                    <button class="px-6 py-3 bg-green-600 text-white rounded-full">Buy Now</button>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <section id="reviews" class="bg-gray-100 py-16 px-4 text-center">
+        <h2 class="text-3xl font-bold mb-8">Customer Reviews</h2>
+        <div class="space-y-8">
+            <div class="bg-white p-6 rounded shadow-md flex flex-col items-center md:flex-row md:items-start">
+                <img src="./images/Profile.jpeg" alt="John Doe" class="w-16 h-16 rounded-full mb-4 md:mb-0">
+                <div class="text-center md:text-left"> 
+                    <p>"GizmoMax is absolutely amazing !"</p>
+                    <p class="mt-2 font-bold">- Deeshri Thapa.</p>
+                </div>
+            </div>
+            <div class="bg-white p-6 rounded shadow-md flex flex-col items-center md:flex-row md:items-start">
+                <img src="./images/Profile.jpeg" alt="Jane Smith" class="w-16 h-16 rounded-full mb-4 md:mb-0">
+                <div class="text-center md:text-left"> 
+                    <p>"Best purchase I've ever made."</p>
+                    <p class="mt-2 font-bold">- Prasamsha Maharjan.</p>
+                </div>
+            </div>
+            <div class="bg-white p-6 rounded shadow-md flex flex-col items-center md:flex-row md:items-start">
+                <img src="./images/Profile.jpeg" alt="Jane Smith" class="w-16 h-16 rounded-full mb-4 md:mb-0">
+                <div class="text-center md:text-left"> 
+                    <p>"Absolutely amazing!"</p>
+                    <p class="mt-2 font-bold">- Swechha Basnet.</p>
+                </div>
+            </div>
+            <div class="bg-white p-6 rounded shadow-md flex flex-col items-center md:flex-row md:items-start">
+                <img src="./images/Profile.jpeg" alt="Jane Smith" class="w-16 h-16 rounded-full mb-4 md:mb-0">
+                <div class="text-center md:text-left"> 
+                    <p>"Lovee itt!!!"</p>
+                    <p class="mt-2 font-bold">- Priya Magar.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <section id="contact" class="py-16 px-4 text-center">
+        <h2 class="text-3xl font-bold mb-8">Contact Us</h2>
+        <form class="max-w-md mx-auto space-y-4">
+            <input type="text" name="name" placeholder="Name" class="w-full p-2 border rounded" required>
+            <input type="email" name="email" placeholder="Email" class="w-full p-2 border rounded" required>
+            <textarea name="message" placeholder="Message" class="w-full p-2 border rounded"></textarea>
+            <button type="submit" class="px-6 py-3 bg-blue-600 text-white rounded-full">Send Message</button>
+        </form>
+    </section>
+
+    <footer class="bg-black text-white py-4 text-center">
+        <div class="mb-2">Follow Us</div>
+        <div class="flex justify-center space-x-4 mb-4">
+            <a href="https://www.facebook.com/patancollege/" target="_blank" class="hover:text-gray-400">Facebook</a>
+            <a href="https://www.instagram.com/pcpscollege/" target="_blank" class="hover:text-gray-400">Instagram</a>
+        </div>
+        <div>&copy; 2024 GizmoHub. All rights reserved.</div>
+    </footer>
+
+    <script>
+        document.getElementById('menu-button').addEventListener('click', function() {
+            document.getElementById('mobile-menu').classList.toggle('hidden');
+        });
+    </script>
+</body>
+</html>
